@@ -8,3 +8,9 @@ A stack dessa aplicação é:
 - Postgres como banco de dados principal
 
 Essa autenticação se baseia em RS256 e JWKS.
+
+---
+
+Para desenvolvimento local utilizamos:
+
+- Just para controlar scripts uteis;
