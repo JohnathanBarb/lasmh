@@ -7,11 +7,9 @@ test:
 run:
     uv run fastapi run src/main.py
 
-lint:
-    uv run ruff check
-
-lint-fix:
-    uv run ruff check --fix
+[arg("fix", long="fix", value="--fix")]
+lint fix="":
+    uv run ruff check {{ fix }}
 
 format:
     uv run ruff format
